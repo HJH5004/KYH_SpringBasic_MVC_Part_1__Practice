@@ -1,4 +1,4 @@
-package hello.kyh_springbasic_mvc_part_1_practice;
+package hello.springmvc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
