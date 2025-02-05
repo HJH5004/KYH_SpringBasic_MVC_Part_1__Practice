@@ -37,7 +37,7 @@ public class ResponseBodyController {
     }
 
     //ResponseBody 어노테이션 활용
-//    @ResponseBody
+    @ResponseBody
     @GetMapping("/response-body-string-v3")
     public String responseBodyV3(HttpServletResponse resp) throws IOException {
         return "ok";
@@ -57,7 +57,7 @@ public class ResponseBodyController {
     //ResponseBody 를 활용한 json  전달
     // 이 타입을 가장 많이 쓴다. Class에는 @RestCotnroller를 설정하여 전달하는 방식으로 주로 많이 씀
     @ResponseStatus(HttpStatus.OK)
-//    @ResponseBody
+    @ResponseBody
     @GetMapping("/response-body-json-v2")
     public HelloData responseBodyJsonV2() throws IOException {
         HelloData helloData = new HelloData();
